@@ -1,9 +1,15 @@
 def array_sum(array)
-  if ______________________
-    array[0]
+
+  if array.length == 1
+    return array[0]
   else
-    ______________________
-  end
+  number = array[0]
+  array.delete_at(0)
+  number
+
+    end
+  number + array_sum(array)
 end
 
-puts array_sum [__, __, ...] 
+
+puts array_sum([1, 2, 3, 4])
