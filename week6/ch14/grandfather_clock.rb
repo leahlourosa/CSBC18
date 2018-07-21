@@ -1,0 +1,17 @@
+
+def clock &block
+time = Time.new.hour.to_i
+if time > 12
+  time = time - 12
+  end
+if time == 0
+  time = 12
+end
+time.times do
+  block.call
+end
+end
+
+clock do
+  puts 'DONG!'
+  end
