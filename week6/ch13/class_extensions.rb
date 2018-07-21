@@ -8,6 +8,7 @@ class Array
       shuffled.push(number)
     end
   return shuffled
+  
   end
 
 end
