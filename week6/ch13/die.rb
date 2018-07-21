@@ -1,6 +1,6 @@
 class Die
   def initialize
-    roll
+    too_powerful_die
   end
 
   def roll
@@ -10,6 +10,12 @@ class Die
   def showing
     @number_showing
   end
-
-  # Define a cheat method here
+  def too_powerful_die
+    @number_showing = rand(1..7)
+  end
+dice = [Die.new, Die.new]
+      #  ...and roll them.
+dice.each do |die|
+puts die.showing
+end
 end
