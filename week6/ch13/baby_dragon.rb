@@ -108,4 +108,4 @@ puts 'what name?'
 name = gets.chomp
  pet = Dragon.new name
  puts 'what would you like to do:?'
- Dragon.new name.eval(gets.chomp)
+ pet.eval(gets.chomp)
